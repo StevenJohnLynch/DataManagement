@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<job xmlns="http://eobjects.org/analyzerbeans/job/1.0">
+    <job-metadata>
+        <job-description>Created with DataCleaner Community edition 4.0.9</job-description>
+        <author>RedQueen</author>
+        <updated-date>2015-11-22Z</updated-date>
+        <metadata-properties>
+            <property name="CoordinatesX.data.Globo-Gym_New.csv">40</property>
+            <property name="CoordinatesX.data.Globo-Gym_Old.csv">40</property>
+            <property name="CoordinatesY.data.Globo-Gym_New.csv">40</property>
+            <property name="CoordinatesY.data.Globo-Gym_Old.csv">40</property>
+        </metadata-properties>
+    </job-metadata>
+    <source>
+        <data-context ref="Globo-Gym_New.csv"/>
+        <columns>
+            <column id="col_id" path="ID" type="STRING"/>
+            <column id="col_surname" path="Surname" type="STRING"/>
+            <column id="col_forename" path="Forename" type="STRING"/>
+            <column id="col_gender" path="Gender" type="STRING"/>
+            <column id="col_dob" path="DOB" type="STRING"/>
+            <column id="col_num" path="Num" type="STRING"/>
+            <column id="col_street" path="Street" type="STRING"/>
+            <column id="col_area" path="Area" type="STRING"/>
+            <column id="col_city" path="City" type="STRING"/>
+        </columns>
+    </source>
+    <transformation/>
+    <analysis>
+        <analyzer>
+            <descriptor ref="Pattern finder"/>
+            <metadata-properties>
+                <property name="CoordinatesY">68</property>
+                <property name="CoordinatesX">280</property>
+            </metadata-properties>
+            <properties>
+                <property name="Discriminate text case" value="true"/>
+                <property name="Discriminate negative numbers" value="false"/>
+                <property name="Discriminate decimals" value="true"/>
+                <property name="Enable mixed tokens" value="true"/>
+                <property name="Ignore repeated spaces" value="false"/>
+                <property name="Upper case patterns expand in size" value="false"/>
+                <property name="Lower case patterns expand in size" value="true"/>
+                <property name="Predefined token name" value="&lt;null&gt;"/>
+                <property name="Predefined token regexes" value="&lt;null&gt;"/>
+                <property name="Decimal separator" value="."/>
+                <property name="Thousands separator" value="&amp;#44;"/>
+                <property name="Minus sign" value="-"/>
+            </properties>
+            <input ref="col_city" name="Column"/>
+        </analyzer>
+        <analyzer>
+            <descriptor ref="Pattern finder"/>
+            <metadata-properties>
+                <property name="CoordinatesY">68</property>
+                <property name="CoordinatesX">280</property>
+            </metadata-properties>
+            <properties>
+                <property name="Discriminate text case" value="true"/>
+                <property name="Discriminate negative numbers" value="false"/>
+                <property name="Discriminate decimals" value="true"/>
+                <property name="Enable mixed tokens" value="true"/>
+                <property name="Ignore repeated spaces" value="false"/>
+                <property name="Upper case patterns expand in size" value="false"/>
+                <property name="Lower case patterns expand in size" value="true"/>
+                <property name="Predefined token name" value="&lt;null&gt;"/>
+                <property name="Predefined token regexes" value="&lt;null&gt;"/>
+                <property name="Decimal separator" value="."/>
+                <property name="Thousands separator" value="&amp;#44;"/>
+                <property name="Minus sign" value="-"/>
+            </properties>
+            <input ref="col_id" name="Column"/>
+        </analyzer>
+        <analyzer>
+            <descriptor ref="Pattern finder"/>
+            <metadata-properties>
+                <property name="CoordinatesY">68</property>
+                <property name="CoordinatesX">280</property>
+            </metadata-properties>
+            <properties>
+                <property name="Discriminate text case" value="true"/>
+                <property name="Discriminate negative numbers" value="false"/>
+                <property name="Discriminate decimals" value="true"/>
+                <property name="Enable mixed tokens" value="true"/>
+                <property name="Ignore repeated spaces" value="false"/>
+                <property name="Upper case patterns expand in size" value="false"/>
+                <property name="Lower case patterns expand in size" value="true"/>
+                <property name="Predefined token name" value="&lt;null&gt;"/>
+                <property name="Predefined token regexes" value="&lt;null&gt;"/>
+                <property name="Decimal separator" value="."/>
+                <property name="Thousands separator" value="&amp;#44;"/>
+                <property name="Minus sign" value="-"/>
+            </properties>
+            <input ref="col_surname" name="Column"/>
+        </analyzer>
+        <analyzer>
+            <descriptor ref="Pattern finder"/>
+            <metadata-properties>
+                <property name="CoordinatesY">68</property>
+                <property name="CoordinatesX">280</property>
+            </metadata-properties>
+            <properties>
+                <property name="Discriminate text case" value="true"/>
+                <property name="Discriminate negative numbers" value="false"/>
+                <property name="Discriminate decimals" value="true"/>
+                <property name="Enable mixed tokens" value="true"/>
+                <property name="Ignore repeated spaces" value="false"/>
+                <property name="Upper case patterns expand in size" value="false"/>
+                <property name="Lower case patterns expand in size" value="true"/>
+                <property name="Predefined token name" value="&lt;null&gt;"/>
+                <property name="Predefined token regexes" value="&lt;null&gt;"/>
+                <property name="Decimal separator" value="."/>
+                <property name="Thousands separator" value="&amp;#44;"/>
+                <property name="Minus sign" value="-"/>
+            </properties>
+            <input ref="col_forename" name="Column"/>
+        </analyzer>
+        <analyzer>
+            <descriptor ref="Pattern finder"/>
+            <metadata-properties>
+                <property name="CoordinatesY">68</property>
+                <property name="CoordinatesX">280</property>
+            </metadata-properties>
+            <properties>
+                <property name="Discriminate text case" value="true"/>
+                <property name="Discriminate negative numbers" value="false"/>
+                <property name="Discriminate decimals" value="true"/>
+                <property name="Enable mixed tokens" value="true"/>
+                <property name="Ignore repeated spaces" value="false"/>
+                <property name="Upper case patterns expand in size" value="false"/>
+                <property name="Lower case patterns expand in size" value="true"/>
+                <property name="Predefined token name" value="&lt;null&gt;"/>
+                <property name="Predefined token regexes" value="&lt;null&gt;"/>
+                <property name="Decimal separator" value="."/>
+                <property name="Thousands separator" value="&amp;#44;"/>
+                <property name="Minus sign" value="-"/>
+            </properties>
+            <input ref="col_gender" name="Column"/>
+        </analyzer>
+        <analyzer>
+            <descriptor ref="Pattern finder"/>
+            <metadata-properties>
+                <property name="CoordinatesY">68</property>
+                <property name="CoordinatesX">280</property>
+            </metadata-properties>
+            <properties>
+                <property name="Discriminate text case" value="true"/>
+                <property name="Discriminate negative numbers" value="false"/>
+                <property name="Discriminate decimals" value="true"/>
+                <property name="Enable mixed tokens" value="true"/>
+                <property name="Ignore repeated spaces" value="false"/>
+                <property name="Upper case patterns expand in size" value="false"/>
+                <property name="Lower case patterns expand in size" value="true"/>
+                <property name="Predefined token name" value="&lt;null&gt;"/>
+                <property name="Predefined token regexes" value="&lt;null&gt;"/>
+                <property name="Decimal separator" value="."/>
+                <property name="Thousands separator" value="&amp;#44;"/>
+                <property name="Minus sign" value="-"/>
+            </properties>
+            <input ref="col_dob" name="Column"/>
+        </analyzer>
+        <analyzer>
+            <descriptor ref="Pattern finder"/>
+            <metadata-properties>
+                <property name="CoordinatesY">68</property>
+                <property name="CoordinatesX">280</property>
+            </metadata-properties>
+            <properties>
+                <property name="Discriminate text case" value="true"/>
+                <property name="Discriminate negative numbers" value="false"/>
+                <property name="Discriminate decimals" value="true"/>
+                <property name="Enable mixed tokens" value="true"/>
+                <property name="Ignore repeated spaces" value="false"/>
+                <property name="Upper case patterns expand in size" value="false"/>
+                <property name="Lower case patterns expand in size" value="true"/>
+                <property name="Predefined token name" value="&lt;null&gt;"/>
+                <property name="Predefined token regexes" value="&lt;null&gt;"/>
+                <property name="Decimal separator" value="."/>
+                <property name="Thousands separator" value="&amp;#44;"/>
+                <property name="Minus sign" value="-"/>
+            </properties>
+            <input ref="col_num" name="Column"/>
+        </analyzer>
+        <analyzer>
+            <descriptor ref="Pattern finder"/>
+            <metadata-properties>
+                <property name="CoordinatesY">68</property>
+                <property name="CoordinatesX">280</property>
+            </metadata-properties>
+            <properties>
+                <property name="Discriminate text case" value="true"/>
+                <property name="Discriminate negative numbers" value="false"/>
+                <property name="Discriminate decimals" value="true"/>
+                <property name="Enable mixed tokens" value="true"/>
+                <property name="Ignore repeated spaces" value="false"/>
+                <property name="Upper case patterns expand in size" value="false"/>
+                <property name="Lower case patterns expand in size" value="true"/>
+                <property name="Predefined token name" value="&lt;null&gt;"/>
+                <property name="Predefined token regexes" value="&lt;null&gt;"/>
+                <property name="Decimal separator" value="."/>
+                <property name="Thousands separator" value="&amp;#44;"/>
+                <property name="Minus sign" value="-"/>
+            </properties>
+            <input ref="col_street" name="Column"/>
+        </analyzer>
+        <analyzer>
+            <descriptor ref="Pattern finder"/>
+            <metadata-properties>
+                <property name="CoordinatesY">68</property>
+                <property name="CoordinatesX">280</property>
+            </metadata-properties>
+            <properties>
+                <property name="Discriminate text case" value="true"/>
+                <property name="Discriminate negative numbers" value="false"/>
+                <property name="Discriminate decimals" value="true"/>
+                <property name="Enable mixed tokens" value="true"/>
+                <property name="Ignore repeated spaces" value="false"/>
+                <property name="Upper case patterns expand in size" value="false"/>
+                <property name="Lower case patterns expand in size" value="true"/>
+                <property name="Predefined token name" value="&lt;null&gt;"/>
+                <property name="Predefined token regexes" value="&lt;null&gt;"/>
+                <property name="Decimal separator" value="."/>
+                <property name="Thousands separator" value="&amp;#44;"/>
+                <property name="Minus sign" value="-"/>
+            </properties>
+            <input ref="col_area" name="Column"/>
+        </analyzer>
+        <analyzer>
+            <descriptor ref="Unique key check"/>
+            <metadata-properties>
+                <property name="CoordinatesY">128</property>
+                <property name="CoordinatesX">284</property>
+            </metadata-properties>
+            <properties>
+                <property name="Buffer size" value="20000"/>
+            </properties>
+            <input ref="col_city"/>
+        </analyzer>
+        <analyzer>
+            <descriptor ref="Completeness analyzer"/>
+            <metadata-properties>
+                <property name="CoordinatesY">221</property>
+                <property name="CoordinatesX">300</property>
+            </metadata-properties>
+            <properties>
+                <property name="Conditions" value="[NOT_BLANK_OR_NULL,NOT_BLANK_OR_NULL,NOT_BLANK_OR_NULL,NOT_BLANK_OR_NULL,NOT_BLANK_OR_NULL,NOT_BLANK_OR_NULL,NOT_BLANK_OR_NULL,NOT_BLANK_OR_NULL,NOT_BLANK_OR_NULL]"/>
+                <property name="Evaluation mode" value="ANY_FIELD"/>
+            </properties>
+            <input ref="col_id"/>
+            <input ref="col_surname"/>
+            <input ref="col_forename"/>
+            <input ref="col_gender"/>
+            <input ref="col_dob"/>
+            <input ref="col_num"/>
+            <input ref="col_street"/>
+            <input ref="col_area"/>
+            <input ref="col_city"/>
+        </analyzer>
+    </analysis>
+</job>
